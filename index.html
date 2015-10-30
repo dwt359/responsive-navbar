@@ -39,16 +39,37 @@
               display: table;
               clear: both;
             }
+
+			@media (max-width: 600px) {
+				.navbar {
+					height: 100px;
+				}
+				.navbar > h1 {
+					text-align: center;
+					float: none;
+					display: block;
+				}
+				.navbar > ul {
+					text-align: center;
+					display: block;
+					float: none;
+				}
+				.navbar > ul > li > a {
+					text-size: 150%;
+				}
+			}
         </style>
     </head>
     <body>
-        <div class="navbar group">
-            <h1>Responsive App</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<div class="navbar group">
+				<h1>Responsive App</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</meta>
     </body>
 </html>
